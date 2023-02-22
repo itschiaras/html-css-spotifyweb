@@ -27,7 +27,7 @@ ul {
 
 img {
     max-width: 100%;
-    display: block;
+    display: block; 
 }
 
 /* UTILITY  */
@@ -62,7 +62,9 @@ img {
     align-items: center;
 }
 
-
+.space-between  {
+    justify-content: space-between;
+}
 
 /* gap  */
 .gxy1 {
@@ -94,6 +96,10 @@ img {
     padding-left: 1rem;
 }
 
+.plhalf1 {
+    padding-left: .5em;
+}
+
 
 
 /* margin  */
@@ -116,6 +122,10 @@ img {
 
 .mt2 {
     margin-top: 2rem;
+}
+
+.mb {
+    margin-bottom: .5rem;
 }
 
 .mb1 {
@@ -259,6 +269,23 @@ main {
 
 .playlist i {
     font-size: 3rem;
+}
+
+.download {
+    width: 1.5rem;
+}
+
+.main-nav hr {
+    width: 90%;
+    border: 0;
+    border-top: 1px solid var(--grey);
+}
+
+.img-profile {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    
 }
 
 /* playerbar  */
