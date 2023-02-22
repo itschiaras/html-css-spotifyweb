@@ -334,6 +334,7 @@ main {
 @media screen and (max-width: 576px) {
     .main-nav {
         width: 50px;
+        
     }
 
     .main-content {
@@ -348,5 +349,7 @@ main {
         margin-bottom: 1.5rem;
     }
     
-
+    .main-nav .container-top, .main-nav .container-bott {
+        display: none;
+    }
 }
