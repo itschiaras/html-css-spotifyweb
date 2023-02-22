@@ -212,7 +212,7 @@ main {
 }
 
 .accent {
-    width: 30%;
+    width: 30px;
     border: 1px solid var(--accent);
     position: absolute;
     right: 35%;
