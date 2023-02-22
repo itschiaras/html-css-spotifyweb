@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>My Spotify</title>
 </head>
 
@@ -16,7 +19,57 @@
     <div class="wrapper">
         <main class="d-flex">
             <!-- left nav  -->
-            <nav class="main-nav"></nav>
+            <nav class="main-nav d-flex column gxy1">
+                <!-- logo -->
+                <div class="logo">
+                    <a href=""><img src="./img/logo.svg" alt=""></a>
+                </div>
+                <!-- options  -->
+                <div class="options d-flex column gxy">
+                    <div class="d-flex align-center">
+                        <a href=""><img src="./img/home.svg" alt=""> </a>
+                        <a href="">
+                            <p class="pl ">Home</p>
+                        </a>
+                    </div>
+                    <div class="d-flex align-center">
+                        <a href=""><img src="./img/search.svg" alt=""> </a>
+                        <a href="">
+                            <p class="pl ">Cerca</p>
+                        </a>
+                    </div>
+                    <div class="d-flex align-center">
+                        <a href=""><img src="./img/libreria.svg" alt=""> </a>
+                        <a href="">
+                            <p class="pl ">Libreria</p>
+                        </a>
+                    </div>
+                </div>
+                <!-- playlist -->
+                <div>
+                    <h4 class="upper-text pl1"> Playlist </h4>
+                </div>
+                <div class="playlist d-flex column pl1 gxy1">
+                    <div class="d-flex align-center">
+                        <a href=""><i class="fa-solid fa-square-plus"></i></a>
+                        <a href="">
+                            <p class="pl "> Crea Playlist</p>
+                        </a>
+                    </div>
+                    <div class="d-flex column gxy1 smaller-text">
+                        <a href=""> Nome Playlist </a>
+                        <a href=""> Nome Playlist </a>
+                        <a href=""> Nome Playlist </a>
+                        <a href=""> Nome Playlist </a>
+                        <a href=""> Nome Playlist </a>
+                        <a href=""> Nome Playlist </a>
+                        <a href=""> Nome Playlist </a>
+                        
+                    </div>
+
+                </div>
+
+            </nav>
             <!-- right content -->
             <section class="main-content">
                 <div id="call-to-action" class=" d-flex justify-end align-center">
@@ -26,7 +79,7 @@
                 <div class="main-section">
                     <!-- central navbar  -->
                     <nav class="nav-bar d-flex j-center ">
-                        <ul class="upper-text d-flex gx1 pt1 pb2 ">
+                        <ul class="upper-text d-flex gxy1 pt1 pb2 ">
                             <li>
                                 <div class="accent"></div>
                                 <a href="">in evidenza</a>
@@ -56,79 +109,79 @@
 
                     <!-- recently played  -->
                     <section id="recently-p" class="container mr1 ml1">
-                        <h3 class="mb2 font"> Recently played </h3>
-                        <div class="albums d-flex gx1">
+                        <h3 class="mb2 "> Ascoltati di recente </h3>
+                        <div class="albums d-flex gxy1">
                             <a href="" class="album">
-                                <img src="./img/metal_lifting.jpg" alt="metal">
+                                <img src="./img/harrys-house-harry-styles-696x696.jpg" alt="metal">
                                 <div class="title text-center mt1">
-                                    <h5>Heavy Metal</h5>
-                                    <span class="small-text t-grey">Subtitle</span>
+                                    <h5>Late Night Talking</h5>
+                                    <span class="small-text t-grey"> Harry Styles </span>
                                 </div>
                             </a>
                             <a href="" class="album">
-                                <img src="./img/metal_lifting.jpg" alt="metal">
+                                <img src="./img/317487-afterglow.jpg" alt="metal">
                                 <div class="title text-center mt1">
-                                    <h5>Heavy Metal</h5>
-                                    <span class="small-text t-grey">Subtitle</span>
+                                    <h5>Afterglow</h5>
+                                    <span class="small-text t-grey">Ed Sheeran</span>
                                 </div>
                             </a>
                             <a href="" class="album">
-                                <img src="./img/metal_lifting.jpg" alt="metal">
+                                <img src="./img/OIP.jpg" alt="metal">
                                 <div class="title text-center mt1">
-                                    <h5>Heavy Metal</h5>
-                                    <span class="small-text t-grey">Subtitle</span>
+                                    <h5>ALDO RITMO </h5>
+                                    <span class="small-text t-grey">Salmo</span>
                                 </div>
                             </a>
                             <a href="" class="album">
-                                <img src="./img/metal_lifting.jpg" alt="metal">
+                                <img src="./img/R.jpg" alt="metal">
                                 <div class="title text-center mt1">
-                                    <h5>Heavy Metal</h5>
-                                    <span class="small-text t-grey">Subtitle</span>
+                                    <h5>!ly (feat. Coez) </h5>
+                                    <span class="small-text t-grey">thasup</span>
                                 </div>
                             </a>
                             <a href="" class="album">
-                                <img src="./img/metal_lifting.jpg" alt="metal">
+                                <img src="./img/Pinguini-Tattici-Nucleari-Fake-news-cover.jpg" alt="metal">
                                 <div class="title text-center mt1">
-                                    <h5>Heavy Metal</h5>
-                                    <span class="small-text t-grey">Subtitle</span>
+                                    <h5>Hikikomori</h5>
+                                    <span class="small-text t-grey">Pinguini Tattici Nucleari</span>
                                 </div>
                             </a>
                             <a href="" class="album">
-                                <img src="./img/metal_lifting.jpg" alt="metal">
+                                <img src="./img/OIP (1).jpg" alt="metal">
                                 <div class="title text-center mt1">
-                                    <h5>Heavy Metal</h5>
-                                    <span class="small-text t-grey">Subtitle</span>
+                                    <h5>Under The Bridge </h5>
+                                    <span class="small-text t-grey">Red Hot Chili Peppers</span>
                                 </div>
                             </a>
-                            
+
                         </div>
                     </section>
                     <!-- created for  -->
                     <section id="created-for" class="mr1 ml1">
-                        <h3 class="font mt2 pb1"> Creato per </h3>
+                        <h3 class="mt2 pb1"> Creato per Chiara </h3>
                         <p class="pb2"> Più ascolti, più accurati saranno i suggerimenti </p>
-                        <div class="albums d-flex gx1">
+                        <div class="albums d-flex gxy1">
                             <a href="" class="album">
-                                <img src="./img/metal_lifting.jpg" alt="metal">
+                                <img src="./img/radar.jpeg" alt="metal">
                                 <div class="title text-center mt1">
-                                    <h5>Heavy Metal</h5>
-                                    <span class="small-text t-grey">Subtitle</span>
+                                    <h5>Release Radar</h5>
+                                    
                                 </div>
                             </a>
                             <a href="" class="album">
-                                <img src="./img/metal_lifting.jpg" alt="metal">
+                                <img src="./img/mixdaily.jpeg" alt="metal">
                                 <div class="title text-center mt1">
-                                    <h5>Heavy Metal</h5>
-                                    <span class="small-text t-grey">Subtitle</span>
+                                    <h5>Daily Mix 1</h5>
+                                    
                                 </div>
                             </a>
                         </div>
                     </section>
                     <!-- most popular  -->
                     <section id="most-popular" class="mr1 ml1 mb1 ">
-                        <h3 class="font mt2 pb1"> Artisti più popolari</h3>
+                        <h3 class="mt2 pb1"> Artisti più popolari</h3>
                         <p class="pb2"> Più ascolti, più accurati saranno i suggerimenti </p>
-                        <div class="albums d-flex gx1">
+                        <div class="albums d-flex gxy1">
                             <a href="" class="album">
                                 <img src="./img/metal_lifting.jpg" alt="metal">
                                 <div class="title text-center mt1">
