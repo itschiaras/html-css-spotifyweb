@@ -66,9 +66,15 @@ img {
     padding-top: 1rem;
 }
 
+.pb1 {
+    padding-bottom: 1rem;
+}
+
 .pb2 {
     padding-bottom: 2rem;
 }
+
+
 
 /* margin  */
 
@@ -82,6 +88,10 @@ img {
 
 .mt1 {
     margin-top: 1rem;
+}
+
+.mt2 {
+    margin-top: 2rem;
 }
 
 .mb2 {
