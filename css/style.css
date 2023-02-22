@@ -94,6 +94,10 @@ img {
     margin-top: 2rem;
 }
 
+.mb1 {
+    margin-bottom: 1rem;
+}
+
 .mb2 {
     margin-bottom: 2rem;
 }
@@ -194,9 +198,11 @@ main {
 
 .album {
     width: calc(100% / 6)
-    
 }
 
+#most-popular img {
+    border-radius: 50%;
+}
 
 
 /* playerbar  */
@@ -204,4 +210,23 @@ main {
     width: 100%;
     height: 90px;
     background-color: var(--dark-grey);
+}
+
+
+
+
+/* MEDIA QUERIES  */
+
+@media screen and (max-width: 576px) {
+    .main-nav {
+        width: 50px;
+    }
+
+    .main-content {
+        width: calc(100% - 50px);
+    }
+
+    #call-to-action {
+        width: calc(100% - 50px);
+    }
 }
