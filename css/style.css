@@ -245,10 +245,10 @@ main {
 .play-element {
     position: absolute;
     width: 100%;
-    height: 80%;
-    background-color: rgba(0, 0, 0, .5);
+    height: 12.3rem;
+    background-color: rgba(0, 0, 0, .4);
     font-size: 3rem;
-    color: var(--dark);
+    color: white;
     display: none;
 }
 
@@ -258,7 +258,16 @@ main {
     align-items: center;
 }
 
+#created-for .album {
+   max-width: 195px;
+}
+
 #most-popular img {
+    border-radius: 50%;
+}
+
+#most-popular .play-element {
+    height: 87%;
     border-radius: 50%;
 }
 
