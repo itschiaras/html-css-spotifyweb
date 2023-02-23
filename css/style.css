@@ -419,20 +419,17 @@ main {
 
 }
 
-
-.player-icon i:hover,
-.song-icon i:hover,
-.vol-icon i:hover {
+#playbar i:hover {
     color: white;
     cursor: pointer;
 }
 
 .fa-circle-play {
-    transition: .5s;
+    transition: transform .5s;
 }
 
 .player .fa-circle-play:hover {
-    font-size: 1.2rem;
+    transform: scale(1.2);
 }
 
 .vol i {
@@ -568,6 +565,6 @@ main {
 
 @media screen and (max-height: 650px) {
     .lists {
-        overflow-y: scroll;
+        overflow-y: auto;
     }
 }
