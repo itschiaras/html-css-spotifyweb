@@ -196,6 +196,12 @@ main {
     border: 1px solid white;
     padding: .7rem 2rem;
     border-radius: 2rem;
+    transform: scale(.8);
+    transition: .5s;
+}
+
+.btn:hover {
+    transform: scale(1);
 }
 
 /* main section */
@@ -232,7 +238,24 @@ main {
 }
 
 .album {
-    width: calc(100% / 6)
+    width: calc(100% / 6);
+    position: relative;
+}
+
+.play-element {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, .5);
+    font-size: 3rem;
+    color: var(--dark);
+    display: none;
+}
+
+.album:hover .play-element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #most-popular img {
@@ -262,9 +285,6 @@ main {
     background-color: var(--dark);
 }
 
-.options {
-    padding-left: 1rem;
-}
 
 .options img {
     width: 25px;
@@ -273,6 +293,30 @@ main {
 
 .options a {
     color: var(--grey);
+    
+}
+
+.home:hover img, .home:hover p,
+.search:hover img, .search:hover p,
+.library:hover img, .library:hover p,
+.list-title:hover p, .list-title:hover i {
+    filter: invert(0);
+    color: white;
+}
+
+.playlist1:hover a, .playlist2:hover a,
+.playlist3:hover a, .playlist4:hover a {
+    color: white;
+}
+
+
+.home, .search, .library {
+    padding-left: 1rem;
+}
+
+.home:hover, .search:hover, .library:hover {
+    border-left: .2rem solid var(--accent);
+    
 }
 
 .playlist a {
@@ -347,7 +391,7 @@ main {
 .slider {
     -webkit-appearance: none;
     background: grey;
-    width: 50%;
+    width: 100%;
     height: 3px;
     border-radius: 10px;
     
@@ -372,7 +416,6 @@ main {
 }
 
 .slider:hover .slider::-webkit-slider-thumb {
-    background: #adff2f;
     opacity: 1;
 }
 
