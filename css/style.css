@@ -66,6 +66,10 @@ img {
     justify-content: space-between;
 }
 
+.space-around {
+    justify-content: space-around;
+}
+
 
 /* gap  */
 .gxy1 {
@@ -246,16 +250,20 @@ main {
     position: absolute;
     width: 100%;
     height: 12.3rem;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: transparent;
     font-size: 3rem;
     color: white;
-    display: none;
-}
-
-.album:hover .play-element{
+    opacity: 0;
+    transition: .5s;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.album:hover .play-element{
+    
+    background-color: rgba(0, 0, 0, .4);
+    opacity: 1;
 }
 
 #created-for .album {
@@ -305,25 +313,22 @@ main {
     
 }
 
-.home:hover img, .home:hover p,
-.search:hover img, .search:hover p,
-.library:hover img, .library:hover p,
-.list-title:hover p, .list-title:hover i {
+.opt:hover img, .opt:hover p, .list-title:hover i {
     filter: invert(0);
     color: white;
 }
 
-.playlist1:hover a, .playlist2:hover a,
-.playlist3:hover a, .playlist4:hover a {
+
+.lists a:hover {
     color: white;
 }
 
 
-.home, .search, .library {
+.opt {
     padding-left: 1rem;
 }
 
-.home:hover, .search:hover, .library:hover {
+.opt:hover {
     border-left: .2rem solid var(--accent);
     
 }
@@ -363,7 +368,7 @@ main {
     width: 100%;
     height: 80px;
     background-color: var(--dark-grey);
-    padding: 15px;
+    padding: 5px 15px;
 }
 
 .song,
@@ -384,13 +389,32 @@ main {
     cursor: pointer;
 }
 
+.artist:hover {
+    text-decoration: underline;
+}
+
 .player {
     width: 40%;
+    height: 100%;
 }
 
 .player-icon i {
     padding-left: 1rem;
+    padding-top: .5rem;
     cursor: pointer;
+}
+
+
+.player-icon i:hover, .song-icon i:hover, .vol-icon i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.fa-circle-play {
+    transition: .5s;
+}
+.player .fa-circle-play:hover {
+    font-size: 1.2rem;
 }
 
 .vol i {
