@@ -70,6 +70,10 @@ img {
     justify-content: space-around;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
 
 /* gap  */
 .gxy1 {
@@ -260,14 +264,14 @@ main {
     align-items: center;
 }
 
-.album:hover .play-element{
-    
+.album:hover .play-element {
+
     background-color: rgba(0, 0, 0, .4);
     opacity: 1;
 }
 
 #created-for .album {
-   max-width: 195px;
+    max-width: 195px;
 }
 
 #most-popular img {
@@ -310,14 +314,23 @@ main {
 
 .options a {
     color: var(--grey);
-    
+
 }
 
-.opt:hover img, .opt:hover p, .list-title:hover i {
+.opt:hover img,
+.opt:hover p,
+.list-title:hover i {
     filter: invert(0);
     color: white;
 }
 
+.lists {
+    margin-top: 10px;
+    padding-left: 10px;
+    height: 150px;
+    /* overflow-y: scroll; */
+    scrollbar-color: var(--grey);
+}
 
 .lists a:hover {
     color: white;
@@ -330,7 +343,7 @@ main {
 
 .opt:hover {
     border-left: .2rem solid var(--accent);
-    
+
 }
 
 .playlist a {
@@ -371,13 +384,16 @@ main {
     padding: 5px 15px;
 }
 
-.song,
-.vol {
+.song {
     width: 215px;
 }
 
+.vol {
+    width: 15%;
+}
+
 .song-image {
-    width: 20%;
+    width: 30px;
 }
 
 .song-text span {
@@ -399,13 +415,14 @@ main {
 }
 
 .player-icon i {
-    padding-left: 1rem;
-    padding-top: .5rem;
     cursor: pointer;
+
 }
 
 
-.player-icon i:hover, .song-icon i:hover, .vol-icon i:hover {
+.player-icon i:hover,
+.song-icon i:hover,
+.vol-icon i:hover {
     color: white;
     cursor: pointer;
 }
@@ -413,6 +430,7 @@ main {
 .fa-circle-play {
     transition: .5s;
 }
+
 .player .fa-circle-play:hover {
     font-size: 1.2rem;
 }
@@ -427,8 +445,8 @@ main {
     width: 100%;
     height: 3px;
     border-radius: 10px;
-    
-    
+
+
 }
 
 .slider:hover {
@@ -439,21 +457,19 @@ main {
 
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
-    height: 10px;
+    appearance: none;
     width: 10px;
+    height: 10px;
     border-radius: 50%;
     background: white;
     cursor: pointer;
-    opacity: 0;
-    
 }
 
-.slider:hover .slider::-webkit-slider-thumb {
-    opacity: 1;
+.slider:hover .slider::-webkit-slider-thumb {}
+
+.hamburger {
+    display: none;
 }
-
-
-
 
 
 /* MEDIA QUERIES  */
@@ -528,5 +544,30 @@ main {
 
     .download {
         margin-bottom: .5rem;
+    }
+
+    .opt {
+        padding-left: 0;
+    }
+
+    .vol {
+        opacity: 0;
+    }
+
+    .hamburger {
+        display: flex;
+        align-items: center;
+        color: var(--grey);
+    }
+
+    .hamburger:hover {
+        color: white;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-height: 650px) {
+    .lists {
+        overflow-y: scroll;
     }
 }
