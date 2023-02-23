@@ -25,6 +25,9 @@
                     <div class="logo mb">
                         <a href=""><img src="./img/logo.svg" alt=""></a>
                     </div>
+                    <div class="logo-small">
+                        <a id="logo-small" href=""><img src="./img/logo-small.svg" alt=""></a>
+                    </div>
                     <!-- options  -->
                     <div class="options d-flex column gxy mb1 smaller-text">
                         <div class="d-flex align-center">
@@ -62,9 +65,7 @@
                             <a href=""> Nome Playlist </a>
                             <a href=""> Nome Playlist </a>
                             <a href=""> Nome Playlist </a>
-                            <a href=""> Nome Playlist </a>
-                            <a href=""> Nome Playlist </a>
-                            <a href=""> Nome Playlist </a>   
+
                         </div>
                     </div>
                 </div>
@@ -81,9 +82,9 @@
                         <span class="smaller-text plhalf1"> Chiara </span>
                     </div>
                 </div>
-                
+
             </nav>
-            
+
             <!-- right content -->
             <section class="main-content">
                 <div id="call-to-action" class=" d-flex justify-end align-center">
@@ -179,14 +180,14 @@
                                 <img src="./img/radar.jpeg" alt="metal">
                                 <div class="title text-center mt1">
                                     <h5>Release Radar</h5>
-                                    
+
                                 </div>
                             </a>
                             <a href="" class="album">
                                 <img src="./img/mixdaily.jpeg" alt="metal">
                                 <div class="title text-center mt1">
                                     <h5>Daily Mix 1</h5>
-                                    
+
                                 </div>
                             </a>
                         </div>
@@ -213,7 +214,56 @@
                 </div>
             </section>
         </main>
-        <div id="player-bar"></div>
+
+        <!-- playbar  -->
+
+        <div id="playbar" class="d-flex space-between">
+            <div class="song d-flex align-center">
+                <div class="song-image">
+                    <a href="">
+                        <img src="./img/sinister.jpeg" alt="">
+                    </a>
+                </div>
+                <div class="song-text plhalf1">
+                    <a href="">
+                        <h5>Sinister</h5>
+                    </a>
+                    <div class="d-flex">
+                        <a href="">
+                            <span class="smaller-text">Brano</span>
+                        </a><a href="">
+                            <span class="smaller-text">Nome</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="song-icon small-text t-grey">
+                    <i class="fa-regular fa-heart "></i>
+                    <i class="fa-sharp fa-regular fa-folder pl"></i>
+                </div>
+            </div>
+            <div class="player d-flex column text-center">
+                <div class="player-icon t-grey text-center">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-sharp fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="slider-container">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+            </div>
+            <div class="vol d-flex align-center small-text t-grey">
+                <div class="vol-icon">
+                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-display"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <div class="slider-container">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
