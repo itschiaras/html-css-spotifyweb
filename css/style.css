@@ -576,6 +576,7 @@ main {
 
     #call-to-action {
         width: calc(100% - 50px);
+        justify-content: center;
     }
 
     .nav-bar li {
@@ -593,7 +594,6 @@ main {
 
     .options {
         text-align: center;
-        padding-left: .8rem;
         margin-top: .8rem;
     }
 
@@ -606,7 +606,7 @@ main {
     }
 
     .opt {
-        padding-left: 0;
+        padding-left: .6rem;
     }
 
     .vol {
@@ -625,8 +625,27 @@ main {
     }
 }
 
+@media screen  and (max-width: 412px) {
+    .song-image {
+        display: none;
+    }
+
+    .song {
+        width: 110px;
+        margin-top: .5rem;
+        display: block;
+    }
+
+    .song-icon {
+        padding: .3rem;
+    }
+
+
+}
+
 @media screen and (max-height: 90px) {
     #call-to-action {
         display: none;
     }
 }
+
