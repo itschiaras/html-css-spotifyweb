@@ -290,7 +290,7 @@ main {
     border-radius: 50%;
 }
 
-#most-popular .hover-element:hover::after {
+#most-popular .hover-element::after {
     
     border-radius: 50%;
 }
