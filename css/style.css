@@ -183,7 +183,7 @@ img {
 main {
     width: 100%;
     height: calc(100% - 80px);
-    background-color: var(--accent);
+    
     overflow: hidden;
 }
 
@@ -254,7 +254,8 @@ main {
     
 }
 
-.hover-element:hover::after {
+
+.hover-element::after {
     content: '\f144';
     font-family: 'Font Awesome 5 Free';
     font-weight: 700;
@@ -272,6 +273,12 @@ main {
     background-color: rgba(0, 0, 0, .5);
     border-left: 2px solid rgba(0, 0, 0, .5);
     border-bottom: 1px solid rgba(0, 0, 0, .5);
+    opacity: 0;
+    transition: .5s;
+}
+
+.hover-element:hover::after {
+    opacity: 1;
 }
 
 
@@ -312,6 +319,7 @@ main {
 }
 
 
+
 .options img {
     width: 25px;
     filter: invert(.3)
@@ -342,7 +350,8 @@ main {
 
 
 .opt {
-    padding-left: 1rem;
+    padding-left: .8rem;
+    border-left: .2rem solid transparent;
 }
 
 .opt:hover {
@@ -449,7 +458,7 @@ main {
 
 .slider:hover {
     background-image: linear-gradient(#adff2f, #adff2f);
-    background-size: 35% 100%;
+    background-size: 35%;
     background-repeat: no-repeat;
 }
 
@@ -462,6 +471,8 @@ main {
     background: white;
     cursor: pointer;
 }
+
+
 
 .slider:hover .slider::-webkit-slider-thumb {}
 
@@ -564,8 +575,3 @@ main {
     }
 }
 
-@media screen and (max-height: 650px) {
-    .lists {
-        overflow-y: auto;
-    }
-}
