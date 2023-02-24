@@ -30,6 +30,30 @@ img {
     display: block;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+
+
+}
+
+::-webkit-scrollbar-track {
+    
+    border: 5px solid transparent;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 20px;
+    transition: 1s;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--grey);
+    
+}
+
 /* UTILITY  */
 
 .d-flex {
@@ -183,7 +207,7 @@ img {
 main {
     width: 100%;
     height: calc(100% - 80px);
-    
+
     overflow: hidden;
 }
 
@@ -251,7 +275,7 @@ main {
 
 .album {
     width: calc(100% / 6);
-    
+
 }
 
 
@@ -291,7 +315,7 @@ main {
 }
 
 #most-popular .hover-element::after {
-    
+
     border-radius: 50%;
 }
 
@@ -478,7 +502,7 @@ main {
     background-image: linear-gradient(#ffffff, #ffffff);
     background-size: 35%;
     background-repeat: no-repeat;
-    
+
 
 }
 
@@ -606,4 +630,3 @@ main {
         display: none;
     }
 }
-
